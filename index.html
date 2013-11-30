@@ -1,10 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <body>
 
 <script>
-document.write(document.URL)
+var keyvalpairs = document.URL.substring(26, document.URL.length);
+document.write(keyvalpairs);
+document.write("<br>");
+var googleFormURL = "https://docs.google.com/forms/d/1P_M_LNWf7gVjWUczG2QqxVQWYNwbA8Z2DWyeumqvBL0/formResponse?" + keyvalpairs;
+document.write(googleFormURL);
+document.write("<br>");
+
 </script>
 
+
 </body>
-</html> 
+</html>
+
